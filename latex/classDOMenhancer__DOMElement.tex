@@ -1,0 +1,137 @@
+\hypertarget{classDOMenhancer__DOMElement}{\section{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element \-Class \-Reference}
+\label{classDOMenhancer__DOMElement}\index{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDOMenhancer__DOMElement_a2f5d057672b6c4af2e3d30423d6f1833}{add\-Element} (\$tag, \$value=null, \$attributes=array(), \$first=false)
+\item 
+\hyperlink{classDOMenhancer__DOMElement_a4dbf30158d070adad97c29da7388a557}{add\-Space} ()
+\item 
+\hyperlink{classDOMenhancer__DOMElement_a207e3cf1335cb983e5a25915b48281d6}{add\-Input} (\$label, \$type, \$id, \$name, \$value, \$focus=false)
+\item 
+\hyperlink{classDOMenhancer__DOMElement_adb0da8f39e1744f5b7ba598ee61bf4c0}{add\-Form} (\$action, \$inputs, \$method=\char`\"{}\-G\-E\-T\char`\"{}, \$add\-Submit\-Btn=true)
+\item 
+\hyperlink{classDOMenhancer__DOMElement_acb45b6b5e98970f48e2af29289e26797}{add\-H\-T\-M\-L} (\$html)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classDOMenhancer__DOMElement_a2f5d057672b6c4af2e3d30423d6f1833}{\index{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}!add\-Element@{add\-Element}}
+\index{add\-Element@{add\-Element}!DOMenhancer_DOMElement@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}}
+\subsubsection[{add\-Element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element\-::add\-Element} (
+\begin{DoxyParamCaption}
+\item[{\$}]{tag, }
+\item[{\$}]{value = {\ttfamily null}, }
+\item[{\$}]{attributes = {\ttfamily array()}, }
+\item[{\$}]{first = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classDOMenhancer__DOMElement_a2f5d057672b6c4af2e3d30423d6f1833}
+\-Function to easily add a node to another node without having to use create\-Element + set\-Attribute + append\-Child
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+string & {\em \$tag} & \-The type of element to add \\
+\hline
+string & {\em \$value} & \-The value (text content) of the node \\
+\hline
+array & {\em \$attributes} & \-An associative array with a list of attributes and their values \\
+\hline
+bool & {\em \$first} & \-Add the element before the other children?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-New\-D\-O\-M\-Element 
+\end{DoxyReturn}
+\hypertarget{classDOMenhancer__DOMElement_adb0da8f39e1744f5b7ba598ee61bf4c0}{\index{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}!add\-Form@{add\-Form}}
+\index{add\-Form@{add\-Form}!DOMenhancer_DOMElement@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}}
+\subsubsection[{add\-Form}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element\-::add\-Form} (
+\begin{DoxyParamCaption}
+\item[{\$}]{action, }
+\item[{\$}]{inputs, }
+\item[{\$}]{method = {\ttfamily \char`\"{}\-G\-E\-T\char`\"{}}, }
+\item[{\$}]{add\-Submit\-Btn = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classDOMenhancer__DOMElement_adb0da8f39e1744f5b7ba598ee61bf4c0}
+\-Add a $<$form$>$
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+string & {\em \$action} & \-Action of the form \\
+\hline
+array & {\em \$inputs} & $<$input$>$s to add to the form \\
+\hline
+string & {\em \$method} & \-Method (\-G\-E\-T or \-P\-O\-S\-T) \\
+\hline
+bool & {\em \$add\-Submit\-Btn} & \-Add a submit button?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classDOMenhancer__DOMElement_acb45b6b5e98970f48e2af29289e26797}{\index{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}!add\-H\-T\-M\-L@{add\-H\-T\-M\-L}}
+\index{add\-H\-T\-M\-L@{add\-H\-T\-M\-L}!DOMenhancer_DOMElement@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}}
+\subsubsection[{add\-H\-T\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element\-::add\-H\-T\-M\-L} (
+\begin{DoxyParamCaption}
+\item[{\$}]{html}
+\end{DoxyParamCaption}
+)}}\label{classDOMenhancer__DOMElement_acb45b6b5e98970f48e2af29289e26797}
+\-Add \-H\-T\-M\-L inside an element
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+string & {\em \$html} & \-H\-T\-M\-L\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classDOMenhancer__DOMElement_a207e3cf1335cb983e5a25915b48281d6}{\index{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}!add\-Input@{add\-Input}}
+\index{add\-Input@{add\-Input}!DOMenhancer_DOMElement@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}}
+\subsubsection[{add\-Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element\-::add\-Input} (
+\begin{DoxyParamCaption}
+\item[{\$}]{label, }
+\item[{\$}]{type, }
+\item[{\$}]{id, }
+\item[{\$}]{name, }
+\item[{\$}]{value, }
+\item[{\$}]{focus = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classDOMenhancer__DOMElement_a207e3cf1335cb983e5a25915b48281d6}
+\-Add an $<$input$>$
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+string & {\em \$label} & \-Label \\
+\hline
+string & {\em \$type} & \-Type \\
+\hline
+string & {\em \$id} & id attribute (also used for class) \\
+\hline
+string & {\em \$name} & name attribute \\
+\hline
+string & {\em \$value} & \-Value \\
+\hline
+bool & {\em \$focus} & \-Autofocus\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classDOMenhancer__DOMElement_a4dbf30158d070adad97c29da7388a557}{\index{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}!add\-Space@{add\-Space}}
+\index{add\-Space@{add\-Space}!DOMenhancer_DOMElement@{\-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element}}
+\subsubsection[{add\-Space}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-O\-Menhancer\-\_\-\-D\-O\-M\-Element\-::add\-Space} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDOMenhancer__DOMElement_a4dbf30158d070adad97c29da7388a557}
+\-Add ~
+
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-D\-O\-M\-Element.\-php\end{DoxyCompactItemize}

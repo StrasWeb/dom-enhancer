@@ -1,0 +1,73 @@
+\hypertarget{classDOMenhancer__Error}{\section{\-D\-O\-Menhancer\-\_\-\-Error \-Class \-Reference}
+\label{classDOMenhancer__Error}\index{\-D\-O\-Menhancer\-\_\-\-Error@{\-D\-O\-Menhancer\-\_\-\-Error}}
+}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classDOMenhancer__Error_ade749aedd3eda3d1d3dce9016172248e}{error\-Handler} (\$errno, \$errstr, \$errfile, \$errline)
+\item 
+static \hyperlink{classDOMenhancer__Error_a5deda79894a3d507319100d4388bbb1f}{display\-Error} (\$errstr, \$errno)
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDOMenhancer__Error_acc8efe5f78c69463019e9e66919e906e}{static {\bfseries \$tag}}\label{classDOMenhancer__Error_acc8efe5f78c69463019e9e66919e906e}
+
+\item 
+\hypertarget{classDOMenhancer__Error_a328b2646a3dbbe1316afb1f5875fd88b}{static {\bfseries \$debug} = false}\label{classDOMenhancer__Error_a328b2646a3dbbe1316afb1f5875fd88b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classDOMenhancer__Error_a5deda79894a3d507319100d4388bbb1f}{\index{\-D\-O\-Menhancer\-\_\-\-Error@{\-D\-O\-Menhancer\-\_\-\-Error}!display\-Error@{display\-Error}}
+\index{display\-Error@{display\-Error}!DOMenhancer_Error@{\-D\-O\-Menhancer\-\_\-\-Error}}
+\subsubsection[{display\-Error}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf \-D\-O\-Menhancer\-\_\-\-Error\-::display\-Error} (
+\begin{DoxyParamCaption}
+\item[{\$}]{errstr, }
+\item[{\$}]{errno}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classDOMenhancer__Error_a5deda79894a3d507319100d4388bbb1f}
+\-Displays an error (in \-H\-T\-M\-L if possible, in plain text if not)
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+string & {\em \$errstr} & \-Error message \\
+\hline
+int & {\em \$errno} & \-Error type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classDOMenhancer__Error_ade749aedd3eda3d1d3dce9016172248e}{\index{\-D\-O\-Menhancer\-\_\-\-Error@{\-D\-O\-Menhancer\-\_\-\-Error}!error\-Handler@{error\-Handler}}
+\index{error\-Handler@{error\-Handler}!DOMenhancer_Error@{\-D\-O\-Menhancer\-\_\-\-Error}}
+\subsubsection[{error\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf \-D\-O\-Menhancer\-\_\-\-Error\-::error\-Handler} (
+\begin{DoxyParamCaption}
+\item[{\$}]{errno, }
+\item[{\$}]{errstr, }
+\item[{\$}]{errfile, }
+\item[{\$}]{errline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classDOMenhancer__Error_ade749aedd3eda3d1d3dce9016172248e}
+\-Custom error handler function \-Displays the error only if \$debug is true
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+int & {\em \$errno} & \-Error type \\
+\hline
+string & {\em \$errstr} & \-Error message \\
+\hline
+string & {\em \$errfile} & \-Error file (not used) \\
+\hline
+string & {\em \$errline} & \-Error line (not used)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+bool 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Error.\-php\end{DoxyCompactItemize}
