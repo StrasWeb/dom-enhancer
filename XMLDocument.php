@@ -55,6 +55,7 @@ class DOMenhancer_XMLDocument
                 "link", null, array("rel"=>"stylesheet", "href"=>"style.css")
             );
         }
+        $this->DOM->head->addElement("meta", null, array("charset"=>"UTF-8"));
     }
     
     /**
