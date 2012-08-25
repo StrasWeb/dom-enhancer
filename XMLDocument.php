@@ -52,7 +52,9 @@ class DOMenhancer_XMLDocument
         $this->DOM->html->appendChild($this->DOM->html->body);
         if ($addCSS) {
             $this->DOM->head->addElement(
-                "link", null, array("rel"=>"stylesheet", "href"=>"style.css")
+                "link", null, array(
+                    "rel"=>"stylesheet", "href"=>"style.css", "type"=>"text/css"
+                )
             );
         }
         $this->DOM->head->addElement("meta", null, array("charset"=>"UTF-8"));
