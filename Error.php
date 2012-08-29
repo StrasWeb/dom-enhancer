@@ -44,9 +44,7 @@ class DOMenhancer_Error
         ) {
             self::displayError($errstr, $errno);
         }
-        if (self::$debug
-            || isset($_GET["debug"])
-        ) {
+        if (self::$debug) {
             return false;
         } else {
             return true;
