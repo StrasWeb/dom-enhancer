@@ -62,7 +62,7 @@ class DOMenhancer_Error
     static function displayError($errstr, $errno)
     {
         global $dom;
-        if (isset($dom)) {
+        if (isset($dom) && isset(self::$tag)) {
             if ($errno==E_USER_WARNING || $errno==E_USER_ERROR) {
                 $class="error";
             } else if ($errno==E_USER_NOTICE) {
