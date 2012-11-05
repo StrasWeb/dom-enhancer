@@ -59,7 +59,7 @@ class DOMenhancer_DOMElement extends DOMElement
     }   
     
     /**
-     * Add <span>&nbsp;</span>
+     * Add a non-breakable space
      * 
      * @return void
      * */
@@ -69,7 +69,7 @@ class DOMenhancer_DOMElement extends DOMElement
     }
     
     /**
-     * Add an <input>
+     * Add a HTML input
      * 
      * @param string $label Label
      * @param string $type  Type
@@ -100,10 +100,10 @@ class DOMenhancer_DOMElement extends DOMElement
     }
     
     /**
-     * Add a <form>
+     * Add a HTML form
      * 
      * @param string $action       Action of the form
-     * @param array  $inputs       <input>s to add to the form
+     * @param array  $inputs       inputs to add to the form
      * @param string $method       Method (GET or POST)
      * @param bool   $addSubmitBtn Add a submit button?
      * 

@@ -26,8 +26,8 @@ class DOMenhancer_XMLDocument
     /**
      * Creates a new document with a DOM
      * 
-     * @param string $title  Content of the <title> tag
-     * @param bool   $addCSS Add <link rel="stylesheet" href="style.css" /> in <head>
+     * @param string $title  Content of the title tag
+     * @param bool   $addCSS Add link to a style.css stylesheet in the head tag
      * 
      * @return void
      * */

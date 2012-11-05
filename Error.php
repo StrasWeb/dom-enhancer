@@ -8,7 +8,7 @@
  * @package  DOMenhancer
  * @author   Pierre Rudloff <contact@rudloff.pro>
  * @license  http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License
- * @link     https://code.google.com/p/dom-enhancer/
+ * @link     https://svn.strasweb.fr/
  */
  /**
  * Custom error handler
@@ -19,11 +19,18 @@
  * @package  DOMenhancer
  * @author   Pierre Rudloff <contact@rudloff.pro>
  * @license  http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License
- * @link     https://code.google.com/p/dom-enhancer/
+ * @link     https://svn.strasweb.fr/
  */
 class DOMenhancer_Error
 {
+    /**
+     * HTML tag to add the error to
+     * */
     static $tag;
+    
+    /**
+     * Enable debug mode
+     * */
     static $debug=false;
     /**
      * Custom error handler function
