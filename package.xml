@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://pear.php.net/dtd/package-2.0"
+    xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+    <name>DomEnhancer</name>
+    <channel>pear.php.net</channel>
+    <summary>Classes to manipulate HTML DOM</summary>
+    <description>
+    dom-enhancer extends PHP5 DOM API with new classes and functions that let you easily manipulate a Document Object Model
+    </description>
+    <lead>
+    <name>Pierre Rudloff</name>
+    <user>Rudloff</user>
+    <email>rudloff@strasweb.fr</email>
+    <active>yes</active>
+    </lead>
+    <helper>
+    <name>Olivier Haquette</name>
+    <user>olivier</user>
+    <email>contact@olivierhaquette.fr</email>
+    <active>yes</active>
+    </helper>
+    <date>2012-11-05</date>
+    <version>
+        <release>0.1.0</release>
+        <api>0.1.0</api>
+    </version>
+    <stability>
+        <release>devel</release>
+        <api>devel</api>
+    </stability>
+    <license url="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</license>
+    <notes>First release</notes>
+    <contents>
+        <dir name="/">
+        <file name="DOMElement.php" role="php" />
+        <file name="Error.php" role="php" />
+        <file name="XMLDocument.php" role="php" />
+        </dir>
+    </contents>
+    <dependencies>
+        <required>
+        <php>
+        <min>5.3</min>
+        </php>
+        <pearinstaller>
+        <min>1.9.4</min>
+        </pearinstaller>
+        </required>
+    </dependencies>
+    <phprelease></phprelease>
+</package>
