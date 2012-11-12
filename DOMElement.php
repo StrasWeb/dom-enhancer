@@ -43,7 +43,10 @@ class DOMenhancer_DOMElement extends DOMElement
             $this->$tag->nodeValue=$value;
         }
         foreach ($attributes as $attr => $value) {
-            if (!empty($value)) {
+            if (empty($value)) {
+                //Boolean attribute
+                $this->$tag->setAttribute($attr, $attr);
+            } else {
                 $this->$tag->setAttribute($attr, $value);
                 if ($attr=="id") {
                     $this->$tag->setIdAttribute("id", true);
